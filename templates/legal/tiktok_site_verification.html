@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="tiktok-developers-site-verification" content="xBJEwfM7iPsL3FXFICvgQajcNL1676Mp" />
+    </head>
+    <body></body>
+    </html>
 
+    5. "Commit new file".
+
+    ========
+    FILE 2 — edit config/urls.py
+    ========
+    1. Buka config/urls.py, klik pensil (Edit).
+    2. Cari dua baris ini:
+
+        path("terms/", TemplateView.as_view(template_name="legal/terms.html"), name="terms"),
+        path("privacy/", TemplateView.as_view(template_name="legal/privacy_page.html"), name="privacy"),
+
+    3. TAMBAHIN baris ini TEPAT di bawah baris privacy (sebelum baris path("accounts/"...)):
+
+        path(
+            "tiktok-developers-site-verification.html",
+            TemplateView.as_view(template_name="legal/tiktok_site_verification.html"),
+            name="tiktok_site_verification",
+        ),
+
+    4. "Commit changes".
