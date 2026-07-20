@@ -12,7 +12,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("health/", health_check, name="health_check"),
     path("terms/", TemplateView.as_view(template_name="legal/terms.html"), name="terms"),
-    path("privacy/", TemplateView.as_view(template_name="legal/privacy.html"), name="privacy"),
+    path("privacy/", TemplateView.as_view(template_name="legal/privacy_page.html"), name="privacy"),
     path("accounts/", include("apps.accounts.urls")),
     path("accounts/", include("allauth.urls")),
     path("organizations/", include("apps.organizations.urls")),
