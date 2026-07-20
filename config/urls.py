@@ -4,6 +4,7 @@ from django.contrib import admin
 from django.http import HttpResponse
 from django.urls import include, path, re_path
 from django.views.generic import TemplateView
+
 from apps.accounts.views import health_check
 from apps.api.api import api as agent_api
 from apps.oauth_server import views as oauth_views
