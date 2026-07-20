@@ -13,11 +13,7 @@ urlpatterns = [
     path("health/", health_check, name="health_check"),
     path("terms/", TemplateView.as_view(template_name="legal/terms.html"), name="terms"),
     path("privacy/", TemplateView.as_view(template_name="legal/privacy_page.html"), name="privacy"),
-    path(
-            "tiktok-developers-site-verification.html",
-            TemplateView.as_view(template_name="legal/tiktok_site_verification.html"),
-            name="tiktok_site_verification",
-        ),
+    path("tiktok-developers-site-verification.html", TemplateView.as_view(template_name="legal/tiktok_site_verification.html"), name="tiktok_site_verification",),
     path("accounts/", include("apps.accounts.urls")),
     path("accounts/", include("allauth.urls")),
     path("organizations/", include("apps.organizations.urls")),
