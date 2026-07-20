@@ -3,6 +3,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 from django.views.generic import TemplateView
+from django.http import HttpResponse
 
 from apps.accounts.views import health_check
 from apps.api.api import api as agent_api
