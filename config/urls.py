@@ -8,7 +8,8 @@ from django.views.generic import TemplateView
 from apps.accounts.views import health_check
 from apps.api.api import api as agent_api
 from apps.oauth_server import views as oauth_views
-
+def tiktok_verify(request, token): return HttpResponse("tiktok-developers-site-verification=" + token, content_type="text/plain")
+    
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("health/", health_check, name="health_check"),
