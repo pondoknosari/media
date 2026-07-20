@@ -1,10 +1,9 @@
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import include, path
-from django.views.generic import TemplateView
+from django.http import HttpResponse
 from django.urls import include, path, re_path
-
+from django.views.generic import TemplateView
 from apps.accounts.views import health_check
 from apps.api.api import api as agent_api
 from apps.oauth_server import views as oauth_views
