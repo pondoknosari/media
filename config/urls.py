@@ -3,7 +3,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 from django.views.generic import TemplateView
-from django.http import HttpResponse
+from django.urls import include, path, re_path
 
 from apps.accounts.views import health_check
 from apps.api.api import api as agent_api
@@ -15,7 +15,7 @@ urlpatterns = [
     path("terms/", TemplateView.as_view(template_name="legal/terms.html"), name="terms"),
     path("privacy/", TemplateView.as_view(template_name="legal/privacy_page.html"), name="privacy"),
     path("tiktok-developers-site-verification.html", TemplateView.as_view(template_name="legal/tiktok_site_verification.html"), name="tiktok_site_verification"),
-    path("tiktokNVQ4r9WZ0C38W0sdDUk7S42IXjGKUH3G.txt", lambda r: HttpResponse("tiktok-developers-site-verification=NVQ4r9WZ0C38W0sdDUk7S42IXjGKUH3G", content_type="text/plain"), name="tiktok_sig"),
+    re_path(r"^tiktok.*\.txt$", lambda r: HttpResponse("tiktok-developers-site-verification=NVQ4r9WZ0C38W0sdDUk7S42IXjGKUH3G", content_type="text/plain"), name="tiktok_sig"),
     path("accounts/", include("apps.accounts.urls")),
     path("accounts/", include("allauth.urls")),
     path("organizations/", include("apps.organizations.urls")),
