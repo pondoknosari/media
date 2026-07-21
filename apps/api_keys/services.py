@@ -61,7 +61,7 @@ def _derive_hmac_pepper() -> bytes:
         algorithm=SHA256(),
         length=32,
         salt=salt,
-        info=b"mpn-api-key-hmac",
+        info=b"brightbean-api-key-hmac",
     ).derive(secret)
 
 
