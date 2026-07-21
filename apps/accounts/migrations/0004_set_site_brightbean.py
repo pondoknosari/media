@@ -5,7 +5,7 @@ def set_site(apps, schema_editor):
     Site = apps.get_model("sites", "Site")
     Site.objects.update_or_create(
         id=1,
-        defaults={"domain": "studio.brightbean.xyz", "name": "Brightbean"},
+        defaults={"domain": "media-lnwz.onrender.com", "name": "Media Pondok Nosari"},
     )
 
 

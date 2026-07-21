@@ -84,7 +84,7 @@ A free hosted version is available at [brightbean.xyz/studio](https://brightbean
 
 ### Hosted Version
 
-A free hosted version of Brightbean Studio is available at [brightbean.xyz/studio](https://brightbean.xyz/studio/). It runs the same codebase as this repository, with no setup or maintenance required.
+A free hosted version of Media Pondok Nosari Studio is available at [brightbean.xyz/studio](https://brightbean.xyz/studio/). It runs the same codebase as this repository, with no setup or maintenance required.
 
 If you'd rather self-host, choose one of the options below.
 
@@ -433,7 +433,7 @@ The Instagram (Direct) connector uses the **Instagram API with Instagram Login**
 
 ### LinkedIn
 
-Brightbean Studio supports two LinkedIn paths. Pick whichever your LinkedIn dev app can obtain - or both, on separate apps.
+Media Pondok Nosari Studio supports two LinkedIn paths. Pick whichever your LinkedIn dev app can obtain - or both, on separate apps.
 
 **Path A - Personal-only (any individual developer can do this):**
 
@@ -474,7 +474,7 @@ Brightbean Studio supports two LinkedIn paths. Pick whichever your LinkedIn dev 
    PLATFORM_LINKEDIN_COMPANY_CLIENT_SECRET=your-client-secret
    ```
 
-If you set only the Path B (Company) credentials, Brightbean Studio automatically reuses them for personal connections too - refresh tokens (365-day) and inbox both work. You only need Path A vars if you have a separate Personal-only app.
+If you set only the Path B (Company) credentials, Media Pondok Nosari Studio automatically reuses them for personal connections too - refresh tokens (365-day) and inbox both work. You only need Path A vars if you have a separate Personal-only app.
 
 > **Note:** "Sign In with LinkedIn using OpenID Connect" / "Share on LinkedIn" and "Community Management API" are **mutually exclusive** on a single LinkedIn app. You need separate apps for Path A and Path B.
 
@@ -542,19 +542,19 @@ No developer app registration needed. Users connect by entering their Bluesky ha
 
 1. Log in to [Bluesky](https://bsky.app/)
 2. Go to **Settings → Privacy and Security → App Passwords**
-3. Create a new app password and use it when connecting your account in Brightbean Studio
+3. Create a new app password and use it when connecting your account in Media Pondok Nosari Studio
 
 ### Mastodon
 
-No developer app registration needed. Brightbean Studio automatically registers an OAuth application on each Mastodon instance when a user connects their account. Users just need to enter their instance URL (e.g., `mastodon.social`).
+No developer app registration needed. Media Pondok Nosari Studio automatically registers an OAuth application on each Mastodon instance when a user connects their account. Users just need to enter their instance URL (e.g., `mastodon.social`).
 
 ### DEV.to
 
 No developer app registration needed. Users connect by entering a personal **API key**:
 
 1. Log in to [DEV.to](https://dev.to/) and open **[Settings → Extensions](https://dev.to/settings/extensions)**
-2. Under **DEV Community API Keys**, enter a description (e.g. `Brightbean`) and click **Generate API Key**
-3. Copy the generated key and paste it when connecting your account in Brightbean Studio
+2. Under **DEV Community API Keys**, enter a description (e.g. `Media Pondok Nosari`) and click **Generate API Key**
+3. Copy the generated key and paste it when connecting your account in Media Pondok Nosari Studio
 
 Posts publish as DEV.to articles (title + Markdown body). The key can be revoked at any time from the same settings page.
 

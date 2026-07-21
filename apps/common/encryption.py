@@ -34,7 +34,7 @@ def _derive_key() -> bytes:
         algorithm=SHA256(),
         length=32,
         salt=salt,
-        info=b"brightbean-field-encryption",
+        info=b"mpn-field-encryption",
     )
     return hkdf.derive(secret)
 

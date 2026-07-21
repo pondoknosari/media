@@ -102,10 +102,10 @@ class MastodonProvider(SocialProvider):
             "POST",
             url,
             json={
-                "client_name": "Brightbean",
+                "client_name": "Media Pondok Nosari",
                 "redirect_uris": redirect_uri,
                 "scopes": " ".join(self.required_scopes),
-                "website": "https://brightbean.xyz",
+                "website": "https://media-lnwz.onrender.com",
             },
         )
         data = resp.json()
